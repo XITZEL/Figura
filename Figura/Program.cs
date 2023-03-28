@@ -62,7 +62,25 @@ class Circulo: Figura
     }
 
 }
-class Triangulo{}
+class Triangulo:Figura
+{
+    //Propiedades
+  //Metodo a heredar
+     public Triangulo (int x, int y, string color, int altura, int ancho):base(x,y,color,altura,ancho)
+    {
+       
+    }
+
+    //Metodos
+    public override double Area()
+    {
+        return((Ancho*Altura)/2);
+    }
+    public override void Dibuja()
+    {
+        Console.WriteLine("Se dibuja un Rectangulo");
+    }
+}
 
 internal class Program
 {
