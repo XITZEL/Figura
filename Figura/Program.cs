@@ -45,7 +45,8 @@ class Circulo: Figura
     //Propiedades 
     public double Diametro{get;set;}
     //Constructor a heredar
-    public Circulo(int x, int y, string color, int altura, int ancho,double diametro):base(x,y,color)
+    public Circulo(){}
+    public Circulo(int x, int y, string color, int altura, int ancho,double diametro)/*:base( x, y, color)*/
     {
         this.Diametro= diametro;
     }
